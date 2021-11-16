@@ -1,10 +1,8 @@
 #' The \code{roundLatLon} function rounds lon/lat coordinates at the same resolution as the desired grid.
 #' It can be used to aggregate spatial point data
 #'
-#'
 #' @title Round lon/lat coordinates at the same resolution as the desired grid
 #' @param x Integer or numeric vector containing the lon/lat information.
-#'
 #' @param origin Integer or character vector containing target nodes IDs.
 #' @param cellsize A non-negative integer or numeric vector containing the edges weights.
 #' @param where Character indicating where the rounding has to occur with respect to the origin or grid cells (default 'Bottom-Left').
