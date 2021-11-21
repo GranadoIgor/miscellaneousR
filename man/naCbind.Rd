@@ -4,7 +4,6 @@
 \alias{naCbind}
 \title{Combine R Objects with different length by Rows or Columns}
 \usage{
-naRbind(..., deparse.level = 1)
 naCbind(..., deparse.level = 1)
 }
 \arguments{

@@ -4,8 +4,7 @@
 #' columns or rows, respectively. If the length of the R objects differ
 #' they are filled with NAs.
 #'
-#' @usage naRbind(..., deparse.level = 1)
-#' naCbind(..., deparse.level = 1)
+#' @usage naCbind(..., deparse.level = 1)
 #'
 #' @param ... A sequence of vector, matrix or data-frame to bind
 #' @param deparse.level Integer controlling the construction of labels in the case of

@@ -5,7 +5,6 @@
 \title{Combine R Objects with different length by Rows or Columns}
 \usage{
 naRbind(..., deparse.level = 1)
-naCbind(..., deparse.level = 1)
 }
 \arguments{
 \item{...}{A sequence of vector, matrix or data-frame to bind}
