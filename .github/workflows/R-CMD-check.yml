@@ -28,9 +28,9 @@ jobs:
           - {os: macOS-latest,   r: 'release'}
           - {os: windows-latest, r: 'release'}
           - {os: windows-latest, r: 'oldrel'}
-          - {os: ubuntu-latest,  r: 'devel', http-user-agent: 'release'}
-          - {os: ubuntu-latest,  r: 'release'}
-          - {os: ubuntu-latest,   r: 'oldrel/1'}  
+          # - {os: ubuntu-latest,  r: 'devel', http-user-agent: 'release'}
+          # - {os: ubuntu-latest,  r: 'release'}
+          # - {os: ubuntu-latest,   r: 'oldrel/1'}  
 
     env:
       GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
@@ -45,6 +45,10 @@ jobs:
           r-version: ${{ matrix.config.r}}
           extra-packages: rcmdcheck
           
+      - uses: r-lib/actions/setup-r-dependencies@v1
+        with:
+          extra-packages: rcmdcheck
+          
       - name: Install dependencies
         run: |
           install.packages(c("remotes", "rcmdcheck"))
@@ -54,3 +58,4 @@ jobs:
       - name: Check
         run: rcmdcheck::rcmdcheck(args = "--no-manual", error_on = "error")
         shell: Rscript {0}
+
