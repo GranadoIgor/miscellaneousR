@@ -1,3 +1,5 @@
+[![R-CMD-check](https://github.com/GranadoIgor/miscellaneousR/actions/workflows/R-CMD-check.yml/badge.svg)](https://github.com/GranadoIgor/miscellaneousR/actions/workflows/R-CMD-check.yml)
+
 # miscellaneousR
 A collection of miscellaneous R functions.
 
